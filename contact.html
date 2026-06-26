@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — SDAP LTD</title>
+  <meta name="description" content="Get in touch with SDAP LTD. Contact us to volunteer, foster, report animal abuse, or ask questions.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo logo-light"><span class="logo-icon">🐾</span><span class="logo-text">SDAP <span>LTD</span></span></a>
+      <button class="nav-toggle" id="navToggle"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="rescue.html">Rescue & Adopt</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="donate.html" class="btn-nav-donate">Donate</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+      <p class="eyebrow eyebrow-light">Reach Out</p>
+      <h1>Contact Us</h1>
+      <p>Questions, volunteer inquiries, animal abuse reports, or partnership opportunities — we want to hear from you.</p>
+    </div>
+  </div>
+
+  <!-- Contact Info Cards -->
+  <section style="background:var(--off-white);padding:56px 0;">
+    <div class="container">
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="cc-icon">📍</div>
+          <h3>Visit Us</h3>
+          <p>123 Paws Avenue, Suite 400<br>Animal City, AC 10001</p>
+          <p style="margin-top:8px;font-size:.88rem;"><strong>Mon–Fri:</strong> 8am – 6pm<br><strong>Sat:</strong> 9am – 4pm<br><strong>Sun:</strong> Closed</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">📞</div>
+          <h3>Call Us</h3>
+          <p><a href="tel:+18005551234" style="color:var(--green);font-weight:600;font-size:1.1rem;">1-800-555-1234</a></p>
+          <p style="margin-top:8px;font-size:.88rem;">For animal emergencies, our hotline is available 24/7. Press 1 for emergencies.</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p><a href="mailto:info@sdaporg.com" style="color:var(--green);font-weight:600;">info@sdaporg.com</a></p>
+          <p style="margin-top:8px;font-size:.88rem;">We respond to all emails within 1–2 business days.</p>
+        </div>
+        <div class="contact-card contact-card-urgent">
+          <div class="cc-icon">🚨</div>
+          <h3>Report Animal Abuse</h3>
+          <p>If you witness animal cruelty or neglect, call our emergency line immediately.</p>
+          <a href="tel:+18005559911" class="btn btn-primary" style="margin-top:12px;padding:10px 22px;font-size:.9rem;">1-800-555-9911</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form + Tabs -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-form-wrap">
+          <!-- Tab Nav -->
+          <div class="contact-tabs">
+            <button class="tab-btn active" data-tab="general">General Inquiry</button>
+            <button class="tab-btn" data-tab="volunteer" id="volunteer">Volunteer</button>
+            <button class="tab-btn" data-tab="foster" id="foster">Foster an Animal</button>
+            <button class="tab-btn" data-tab="corporate" id="corporate">Corporate Partnership</button>
+          </div>
+
+          <!-- General -->
+          <div class="tab-content active" id="tab-general">
+            <h2>Send Us a Message</h2>
+            <p>Have a question or want to get involved? Fill out the form and we'll be in touch soon.</p>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group"><label>First Name *</label><input type="text" required placeholder="Jane"></div>
+                <div class="form-group"><label>Last Name *</label><input type="text" required placeholder="Smith"></div>
+              </div>
+              <div class="form-group"><label>Email Address *</label><input type="email" required placeholder="jane@example.com"></div>
+              <div class="form-group"><label>Phone</label><input type="tel" placeholder="+1 (555) 000-0000"></div>
+              <div class="form-group"><label>Subject *</label>
+                <select required>
+                  <option value="">Select a topic...</option>
+                  <option>General Question</option>
+                  <option>Adoption Inquiry</option>
+                  <option>Donation Question</option>
+                  <option>Media / Press</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Message *</label><textarea required placeholder="How can we help?"></textarea></div>
+              <button type="submit" class="btn btn-primary">Send Message →</button>
+            </form>
+          </div>
+
+          <!-- Volunteer -->
+          <div class="tab-content" id="tab-volunteer">
+            <h2>Become a Volunteer</h2>
+            <p>We welcome volunteers of all backgrounds. Whether you love animals or have professional skills to offer, there's a place for you at SDAP.</p>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group"><label>First Name *</label><input type="text" required></div>
+                <div class="form-group"><label>Last Name *</label><input type="text" required></div>
+              </div>
+              <div class="form-group"><label>Email *</label><input type="email" required></div>
+              <div class="form-group"><label>Phone *</label><input type="tel" required></div>
+              <div class="form-group"><label>Availability</label>
+                <select>
+                  <option>Weekdays</option>
+                  <option>Weekends</option>
+                  <option>Both weekdays and weekends</option>
+                  <option>Flexible</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Areas of Interest</label>
+                <select>
+                  <option>Animal Care (shelter)</option>
+                  <option>Emergency Rescue</option>
+                  <option>Community Education</option>
+                  <option>Legal Support</option>
+                  <option>Fundraising & Events</option>
+                  <option>Marketing & Social Media</option>
+                  <option>Administrative Support</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Tell us about yourself</label><textarea placeholder="Your experience with animals, skills you'd like to contribute..."></textarea></div>
+              <button type="submit" class="btn btn-primary">Apply to Volunteer →</button>
+            </form>
+          </div>
+
+          <!-- Foster -->
+          <div class="tab-content" id="tab-foster">
+            <h2>Apply to Foster</h2>
+            <p>Fostering gives rescued animals a safe, loving home while they wait for permanent placement. We provide all supplies and veterinary care.</p>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group"><label>Full Name *</label><input type="text" required></div>
+                <div class="form-group"><label>Email *</label><input type="email" required></div>
+              </div>
+              <div class="form-group"><label>Home Address *</label><input type="text" required placeholder="123 Street, City, State, ZIP"></div>
+              <div class="form-group"><label>Housing Type</label>
+                <select>
+                  <option>House with yard</option>
+                  <option>House without yard</option>
+                  <option>Apartment</option>
+                  <option>Condo / Townhouse</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Animals you're open to fostering</label>
+                <select>
+                  <option>Dogs</option>
+                  <option>Cats</option>
+                  <option>Small animals (rabbits, guinea pigs)</option>
+                  <option>Any animal in need</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Do you currently have pets?</label>
+                <select>
+                  <option>No pets</option>
+                  <option>Yes — dogs</option>
+                  <option>Yes — cats</option>
+                  <option>Yes — mixed pets</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Additional notes</label><textarea placeholder="Any relevant information about your home or experience..."></textarea></div>
+              <button type="submit" class="btn btn-primary">Apply to Foster →</button>
+            </form>
+          </div>
+
+          <!-- Corporate -->
+          <div class="tab-content" id="tab-corporate">
+            <h2>Corporate Partnership</h2>
+            <p>Partner with SDAP LTD to demonstrate your organization's commitment to animal welfare. We offer a range of partnership models to suit businesses of all sizes.</p>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+              <div class="form-row">
+                <div class="form-group"><label>Contact Name *</label><input type="text" required></div>
+                <div class="form-group"><label>Job Title *</label><input type="text" required></div>
+              </div>
+              <div class="form-group"><label>Company Name *</label><input type="text" required></div>
+              <div class="form-group"><label>Email *</label><input type="email" required></div>
+              <div class="form-group"><label>Phone</label><input type="tel"></div>
+              <div class="form-group"><label>Partnership Interest</label>
+                <select>
+                  <option>Sponsorship</option>
+                  <option>Employee Giving / Payroll Giving</option>
+                  <option>Cause Marketing Campaign</option>
+                  <option>Volunteer Program for Employees</option>
+                  <option>Event Sponsorship</option>
+                  <option>In-kind Donation</option>
+                  <option>General Partnership Discussion</option>
+                </select>
+              </div>
+              <div class="form-group"><label>Message</label><textarea placeholder="Tell us about your company and partnership goals..."></textarea></div>
+              <button type="submit" class="btn btn-primary">Get in Touch →</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="contact-sidebar">
+          <div class="sidebar-box">
+            <h3>🕐 Response Times</h3>
+            <ul class="sidebar-list">
+              <li><strong>General inquiries:</strong> 1–2 business days</li>
+              <li><strong>Volunteer applications:</strong> 3–5 business days</li>
+              <li><strong>Foster applications:</strong> 3–5 business days</li>
+              <li><strong>Corporate inquiries:</strong> 2–3 business days</li>
+              <li><strong>Emergency reports:</strong> Immediate response</li>
+            </ul>
+          </div>
+          <div class="sidebar-box" style="background:#e8f5e9;">
+            <h3>🚨 Animal Emergency?</h3>
+            <p>If you've witnessed animal abuse, neglect, or an animal in immediate danger, call our 24/7 emergency line:</p>
+            <a href="tel:+18005559911" style="display:block;margin-top:12px;font-size:1.2rem;font-weight:700;color:var(--green);">1-800-555-9911</a>
+            <p style="margin-top:8px;font-size:.85rem;">Do not attempt to intervene directly — call us and we'll coordinate with authorities.</p>
+          </div>
+          <div class="sidebar-box">
+            <h3>📍 Our Shelters</h3>
+            <p style="font-weight:600;margin-bottom:4px;">Main Shelter</p>
+            <p>123 Paws Avenue, Animal City</p>
+            <p style="margin-top:12px;font-weight:600;margin-bottom:4px;">Eastside Facility</p>
+            <p>456 Wildlife Road, Eastside</p>
+            <p style="margin-top:12px;font-weight:600;margin-bottom:4px;">Wildlife Rehab Center</p>
+            <p>789 Forest Lane, Greendale</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand"><a href="index.html" class="logo logo-light"><span class="logo-icon">🐾</span><span class="logo-text">SDAP <span>LTD</span></span></a><p>Society for the Defense of Animal Protection.</p><div class="social-links"><a href="#">f</a><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a></div></div>
+      <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="about.html">About</a></li><li><a href="programs.html">Programs</a></li><li><a href="rescue.html">Adopt</a></li><li><a href="news.html">News</a></li></ul></div>
+      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="donate.html">Donate</a></li><li><a href="contact.html#volunteer">Volunteer</a></li><li><a href="contact.html#foster">Foster</a></li></ul></div>
+      <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li>📍 123 Paws Avenue, Suite 400</li><li>📞 <a href="tel:+18005551234">1-800-555-1234</a></li><li>✉️ <a href="mailto:info@sdaporg.com">info@sdaporg.com</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><div class="container footer-bottom-inner"><p>© 2024 SDAP LTD. All rights reserved.</p><div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Use</a></div></div></div>
+  </footer>
+
+  <style>
+    .contact-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .contact-card { background: var(--white); border-radius: var(--radius); padding: 28px 24px; box-shadow: var(--shadow); }
+    .contact-card-urgent { border-left: 4px solid #c0392b; }
+    .cc-icon { font-size: 1.8rem; margin-bottom: 12px; }
+    .contact-card h3 { margin-bottom: 10px; font-size: 1.05rem; }
+
+    .contact-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+    .contact-form-wrap { background: var(--white); border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); overflow: hidden; }
+    .contact-tabs { display: flex; border-bottom: 2px solid var(--gray-200); overflow-x: auto; }
+    .tab-btn { padding: 16px 20px; background: none; border: none; font-weight: 600; font-size: .88rem; cursor: pointer; color: var(--gray-600); white-space: nowrap; border-bottom: 3px solid transparent; margin-bottom: -2px; transition: all .2s; }
+    .tab-btn.active { color: var(--green); border-bottom-color: var(--green); }
+    .tab-content { display: none; padding: 36px; }
+    .tab-content.active { display: block; }
+    .tab-content h2 { margin-bottom: 8px; }
+    .tab-content > p { margin-bottom: 28px; }
+
+    .contact-sidebar { display: flex; flex-direction: column; gap: 20px; }
+    .sidebar-box { background: var(--off-white); border-radius: var(--radius); padding: 24px; }
+    .sidebar-box h3 { margin-bottom: 14px; font-size: 1rem; }
+    .sidebar-list { list-style: none; }
+    .sidebar-list li { padding: 7px 0; font-size: .9rem; border-bottom: 1px solid rgba(0,0,0,.06); }
+    .sidebar-list li:last-child { border-bottom: none; }
+
+    @media (max-width: 1100px) { .contact-cards { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 900px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .contact-cards { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 500px) { .contact-cards { grid-template-columns: 1fr; } }
+  </style>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Tab switching
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.tab;
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + target).classList.add('active');
+      });
+    });
+    // Handle anchor hash for direct tab activation
+    const hash = window.location.hash.replace('#','');
+    if (hash && document.querySelector(`[data-tab="${hash}"]`)) {
+      document.querySelector(`[data-tab="${hash}"]`).click();
+    }
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Thank you! Your message has been received. We\'ll be in touch within 1–2 business days.');
+    }
+  </script>
+</body>
+</html>
